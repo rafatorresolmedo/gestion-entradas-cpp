@@ -34,7 +34,7 @@ Inicio de sesion completado, admin1
 
 ## Diseño
 
-![Diagrama UML de clases](diagrama_uml.jpg)
+<img width="1879" height="1777" alt="image" src="https://github.com/user-attachments/assets/0599e6b6-344d-4f88-b235-565d3f8889c3" />
 
 - **Herencia y polimorfismo**: `Usuario` es una clase **abstracta** con métodos virtuales puros (`display()`, `guardarEnFichero()`). De ella heredan `Administrador`, `Artista` y `Asistente`, y de esta última `AsistenteVIP`. Todos los usuarios se guardan en un único `vector<Usuario*>`, y cada uno ejecuta su propia versión de los métodos.
 - **`dynamic_cast`** para identificar el tipo concreto de cada usuario y mostrarle su menú.
